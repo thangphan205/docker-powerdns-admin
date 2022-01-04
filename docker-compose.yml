@@ -8,6 +8,9 @@ services:
     ports:
       - "80:80"
     # To override the default config.py:
+    volumes:
+            - "/etc/timezone:/etc/timezone:ro"
+            - "/etc/localtime:/etc/localtime:ro"
     #volumes:
       #- /path/to/configs/config.py:/powerdns-admin/config.py
     environment:

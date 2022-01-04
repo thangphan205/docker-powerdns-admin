@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   powerdns-admin:
-    image: hsrnetwork/powerdns-admin:latest
+    image: ngoduykhanh/powerdns-admin:latest
     hostname: powerdns-admin
     restart: unless-stopped
     ports:
